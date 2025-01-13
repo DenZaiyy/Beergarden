@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/_mobile.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Beergarden - Elan Formation</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="home">
+        <!-- Navbar desktop -->
+        <nav class="navbar_fixed">
+            <div class="navbar_logo">
+                <a href="#home">
+                    <img src="assets/img/logo-light.png" alt="Logo Beergarden">
+                </a>
+            </div>
+            <ul class="navbar_links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#traditions">Tradition</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#offers">Menu</a></li>
+                <li><a href="#map">Contact</a></li>
+            </ul>
+            <div class="navbar_socials">
+                <ul>
+                    <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar mobile & tablet -->
+        <nav class="navbar_responsive">
+            <div class="navbar_logo">
+                <a href="#home"><img src="assets/img/logo-light.png" alt="Logo beergarden" /></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="navbarMobileView()">
+                <i class="fa fa-bars fa-2xl"></i>
+            </a>
+            <ul class="navbar_links" id="nav_mobile_links" style="display: none;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#traditions">Traditions</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#offers">Menu</a></li>
+                <li><a href="#map">Contact</a></li>
+            </ul>
+            <ul class="navbar_socials">
+                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+        <!-- Hero -->
+        <div class="hero">
+            <img src="assets/img/h5-slider-graphic.png" alt="Hero Beergarden">
+        </div>
+    </header>
+    <!-- Citation -->
+    <section class="citation_brand">
+        <p>"Love and magic have a great deal in common. They enrich the soul, delight the heart. And they both take
+            practice."</p>
+    </section>
+    <!-- Traditions -->
+    <section class="traditions" id="traditions">
+        <!-- Each Tradition with class tradition -->
+        <div class="tradition">
+            <!-- Each tradition have infos -->
+            <div class="tradition_infos">
+                <h2>Beer tradition</h2>
+
+                <span class="tradition_infos_subtitle">
+                    Tons of shortcodes provide countless options
+                </span>
+                <p class="tradition_infos_description">
+                    Edge Themes give you everything you need to create an amazing website. Designed and built with care,
+                    filled with creative elements and useful options, and completely user-friendly. Set up your website
+                    quickly and with ease. From image galleries to various interactive features you can mix and match
+                    all elements.
+                </p>
+                <button class="tradition_button_read-more">
+                    Read more
+                </button>
+            </div>
+            <!-- Tradition Image -->
+            <div class="tradition_img">
+                <img src="assets/img/h5-holder-image-1.png" alt="Beer Tradition image">
+            </div>
+        </div>
+        <div class="tradition">
+            <!-- Invert image with infos for second tradition -->
+            <div class="tradition_img">
+                <picture>
+                    <img src="assets/img/h5-holder-image-2.png" alt="Beer Tradition image">
+                </picture>
+            </div>
+            <div class="tradition_infos">
+                <h2>Pub story</h2>
+                <span class="tradition_infos_subtitle">
+                    Tons of shortcodes provide countless options
+                </span>
+                <p class="tradition_infos_description">
+                    Edge Themes give you everything you need to create an amazing website. Designed and built with care,
+                    filled with creative elements and useful options, and completely user-friendly. Set up your website
+                    quickly and with ease. From image galleries to various interactive features you can mix and match
+                    all elements.
+                </p>
+                <button class="tradition_button_read-more">
+                    Read more
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery section with 4 div contains images and overlay for the hover effect -->
+    <section class="gallery" id="gallery">
+        <div class="gallery_img">
+            <img src="assets/img/h5-gallery-img-1-477x477.jpg" alt="Gallery image 1">
+            <div class="overlay">
+                <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="gallery_img">
+            <img src="assets/img/h5-gallery-img-2-477x477.jpg" alt="Gallery image 2">
+            <div class="overlay">
+                <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="gallery_img">
+            <img src="assets/img/h5-gallery-img-3-477x477.jpg" alt="Gallery image 3">
+            <div class="overlay">
+                <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="gallery_img">
+            <img src="assets/img/h5-gallery-img-4-477x477.jpg" alt="Gallery image 4">
+            <div class="overlay">
+                <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff;"></i>
+            </div>
+        </div>
+    </section>
+    <!-- Services section to show services about enterprise -->
+    <section class="services" id="services">
+        <!-- Single service contains icon with infos (title, content) -->
+        <div class="service">
+            <div class="service_icon">
+                <img src="assets/img/h5-icon-1.png" alt="Icone of service 1">
+            </div>
+            <div class="service_infos">
+                <h3 class="service_title">Setch is the first</h3>
+                <p class="service_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etiam fermemtum nulla tincidunt amet
+                    malesuada.
+                </p>
+            </div>
+        </div>
+        <!-- Another service -->
+        <div class="service">
+            <div class="service_icon">
+                <img src="assets/img/h5-icon-2.png" alt="Icone of service 1">
+            </div>
+            <div class="service_infos">
+                <h3 class="service_title">Second chance</h3>
+                <p class="service_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etiam fermemtum nulla tincidunt amet
+                    malesuada.
+                </p>
+            </div>
+        </div>
+        <!-- Another service -->
+        <div class="service">
+            <div class="service_icon">
+                <img src="assets/img/h5-icon-3.png" alt="Icone of service 1">
+            </div>
+            <div class="service_infos">
+                <h3 class="service_title">Test it all</h3>
+                <p class="service_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etiam fermemtum nulla tincidunt amet
+                    malesuada.
+                </p>
+            </div>
+        </div>
+        <!-- Another service -->
+        <div class="service">
+            <div class="service_icon">
+                <img src="assets/img/h5-icon-4.png" alt="Icone of service 1">
+            </div>
+            <div class="service_infos">
+                <h3>Refresh your time</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etiam fermemtum nulla tincidunt amet
+                    malesuada.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Offers section to show menu in parrallax effect -->
+    <section class="our-offers" id="offers">
+        <h3>This is our offer</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etiam fermemtum nulla tincidunt amet malesuada.</p>
+    </section>
+    <!-- Map section to create leaflet map with box-shadow effect -->
+    <div id="map"></div>
+    <!-- Footer to show logo of enterprise -->
+    <footer>
+        <img src="assets/img/footer-logo.png" alt="logo of footer">
+    </footer>
+
+    <!-- Script to manipulate leaflet map and add custom cursor -->
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>

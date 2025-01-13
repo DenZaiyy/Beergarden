@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        height: auto;
+    }
+    .navbar_fixed {
+        display: none;
+    }
+
+    .navbar_responsive {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        background-color: var(--black_opacity);
+        width: 100%;
+        padding: var(--responsive_padding);
+    }
+
+    .navbar_responsive .icon {
+        color: var(--white);
+    }
+
+    .navbar_responsive .navbar_socials {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar_responsive #nav_mobile_links {
+        display: none;
+    }
+
+    .hero img {
+        padding: var(--responsive_padding);
+        width: 100%;
+        height: 100%;
+    }
+
+    .citation_brand {
+        font-size: 1.5rem;
+        padding: var(--responsive_padding);
+    }
+
+    .traditions {
+        padding: var(--responsive_padding);
+        flex-direction: column;
+    }
+
+    .traditions .tradition {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+}
