@@ -47,8 +47,8 @@
     }
 
     .traditions {
-        padding: var(--responsive_padding);
         flex-direction: column;
+        gap: 1rem;
     }
 
     .traditions .tradition {
@@ -57,5 +57,33 @@
         justify-content: center;
         align-items: center;
         height: auto;
+    }
+
+    .traditions .tradition .tradition_img img {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .traditions .tradition .tradition_infos {
+        padding: var(--responsive_padding);
+    }
+
+    .gallery {
+        grid-template-columns: auto;
+    }
+
+    .services {
+        padding: var(--responsive_padding);
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .services .service {
+        padding: 0;
+    }
+
+    #map {
+        height: 50vh;
     }
 }
