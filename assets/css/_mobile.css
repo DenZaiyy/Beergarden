@@ -60,7 +60,7 @@
     }
 
     .traditions .tradition .tradition_img img {
-        padding: 20px;
+        padding: var(--responsive_padding);
         width: 100%;
         height: 100%;
     }
